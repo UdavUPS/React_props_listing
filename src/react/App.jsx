@@ -1,4 +1,4 @@
-
+import { Listing } from './Listing/Listing.jsx';
 
 
 function App() {
@@ -6,9 +6,9 @@ function App() {
 
 
   return (
-    <div className="body-box">
-      
-    </div>
+    <>
+      <Listing />
+    </>
   );
 }
 
