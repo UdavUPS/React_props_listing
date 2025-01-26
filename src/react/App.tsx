@@ -1,4 +1,4 @@
-import { Listing } from './Listing/Listing.jsx';
+import { Listing } from './Listing/Listing.tsx';
 
 
 function App() {

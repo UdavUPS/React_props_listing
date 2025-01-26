@@ -1,14 +1,14 @@
-import { Item } from '../Item/Item.jsx';
-import { dats } from '../../js/object.js';
+import { Item } from '../Item/Item.tsx';
+import { dats } from '../../js/object.ts';
 
 export function Listing () {
 
 
-    const items = dats.map(elem => {
+    const items: Array<any> = dats.map((elem: any) => {
 
         if (elem.state === 'active') {
 
-            let quantityColor: string;
+            let quantityColor: string = "";
             let currencySymbol: string = "";
             let currencySymbol2: string = "";
 

@@ -1,6 +1,16 @@
-export function Item ({ href, src, itemTitle, itemPrice, itemQuantity, level = "level-medium"}) {
+type Props = {
+  href: string,
+  src: string,
+  itemTitle: string,
+  itemPrice: string,
+  itemQuantity: string, 
+  level: string
+}
 
-    let classForQuantity = `item-quantity + ${level}`
+
+export function Item ({ href, src, itemTitle, itemPrice, itemQuantity, level = "level-medium"}: Props) {
+
+    let classForQuantity: string = `item-quantity + ${level}`;
 
     return (
         <div className="item-list">
