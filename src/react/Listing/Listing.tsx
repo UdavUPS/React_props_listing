@@ -4,7 +4,8 @@ import { dats } from '../../js/object.ts';
 export function Listing () {
 
 
-    const items: Array<any> = dats.map((elem: any) => {
+    const items: Array<object> = dats.map((elem: object) => {
+        
 
         if (elem.state === 'active') {
 
