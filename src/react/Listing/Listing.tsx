@@ -1,10 +1,24 @@
 import { Item } from '../Item/Item.tsx';
 import { dats } from '../../js/object.ts';
 
+interface itemObject {
+    state: string,
+    currency_code: string,
+    quantity: number,
+    listing_id: number,
+    url: string,
+    MainImage: {
+        url_570xN: string
+    },
+    title: string,
+    price: number
+}
+
+
 export function Listing () {
 
 
-    const items: Array<object> = dats.map((elem: object) => {
+    const items: Array<itemObject> = dats.map((elem: itemObject) => {
         
 
         if (elem.state === 'active') {
@@ -37,7 +51,7 @@ export function Listing () {
         }
     })
 
-    /* console.log(items) */
+    /* console.log(dats[0]); */
 
     return (
         <>
